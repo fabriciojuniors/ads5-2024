@@ -21,4 +21,27 @@
   <ion-button (click)="minhaFuncao()" color="danger" fill="outline" >
     <ion-icon slot="icon-only" name="star-outline"></ion-icon>
   </ion-button>
+
+  <ion-list lines="none">
+    <ion-list-header>Título</ion-list-header>
+
+    @for(fruta of dados; track fruta) {
+      <app-fruta [nomeFruta]="fruta"></app-fruta>
+      <!-- @if(fruta == 'ABACAXI') {
+        <ion-item color="danger">
+          {{fruta}}
+        </ion-item>
+      } @else {
+        <ion-item>
+          {{fruta}}
+        </ion-item>
+      } -->
+    }
+<!-- 
+    @for(pessoa of dados2; track pessoa) {
+      {{pessoa | json}}
+    } -->
+
+    
+  </ion-list>
 </ion-content>
