@@ -1,0 +1,7 @@
+{
+  "name": "correcao-atividade-1",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
